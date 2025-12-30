@@ -5,14 +5,14 @@ conn = mariadb.connect(
     password="",
     host="localhost",
     port=3306,
-    database="test",
+    database="institute",
 )
 cursor = conn.cursor()
 
 sql = "INSERT INTO student ( email, age) VALUES ( ?, ?)"
 total_rows = 10000000
 batch_size = 100000
-
+# user1@example.com
 try:
     for start in range(0, total_rows, batch_size):
         batch_data = [( f"user{i}@example.com", 18 + (i % 53))
