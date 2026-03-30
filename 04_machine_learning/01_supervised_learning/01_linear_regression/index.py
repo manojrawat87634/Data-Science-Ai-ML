@@ -13,8 +13,7 @@ X = np.array([
 y = np.array([200, 300, 150, 400])
 
 model = LinearRegression()
-model.fit(X, y)pip install scikit-learn
-
+model.fit(X, y)
 
 # Predict new pizza
 # size=11, toppings=2, cheese=3
