@@ -41,11 +41,55 @@ INSERT INTO marks (student_id, test_id, marks) VALUES
 (6, 102, 86);
 
 
+-- Row Number
  SELECT
    *, 
     ROW_NUMBER() OVER (
         PARTITION BY m.test_id
         ORDER BY m.marks DESC
     ) as rank
-FROM marks m
+FROM marks m 
 JOIN students s ON s.id = m.student_id;
+
+
+-- rank 
+UPDATE marks 
+SET marks = 85 
+WHERE student_id = 5 AND test_id = 101;
+
+
+/* 
+E-COMMERCE: Top spending users per day
+- Group data by each day
+- Rank users based on amount spent (highest first)
+- Used for daily leaderboards or offers
+*/
+
+/* 
+FOOD DELIVERY: Top restaurants per city
+- Group data by city
+- Rank restaurants based on total orders
+- Used to show trending/popular restaurants
+*/
+
+/* 
+FINANCE APP: Largest transaction per account
+- Group data by account
+- Rank transactions based on amount
+- Used for fraud detection or financial insights
+*/
+
+/* 
+ATTENDANCE SYSTEM: Most regular students per batch
+- Group data by batch
+- Rank students based on attendance count
+- Used for rewards or performance tracking
+*/
+
+/* 
+GENERAL WINDOW FUNCTION LOGIC
+- PARTITION BY → divides data into groups
+- ORDER BY → sorts data inside each group
+- RANK() → assigns ranking with ties (same value = same rank)
+- Outer WHERE → used to filter top N results
+*/
