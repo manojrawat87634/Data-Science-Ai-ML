@@ -4,16 +4,6 @@ arr = [
         "options" : ["Delhi", "mumbai", "patna"],
         "ans" : 0
     },
-    {
-        "que0" : "Who is the capital of india?",
-        "options" : ["Delhi", "mumbai", "patna"],
-        "ans" : 0
-    },
-    {
-        "que0" : "Who is the capital of india?",
-        "options" : ["Delhi", "mumbai", "patna"],
-        "ans" : 0
-    },
 ]
 
 for i in arr:
