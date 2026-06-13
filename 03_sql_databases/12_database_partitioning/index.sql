@@ -1,0 +1,14 @@
+CREATE TABLE orders (
+    id BIGSERIAL,
+    order_date DATE NOT NULL,
+    customer_id INT,
+    amount DECIMAL(10,2)
+) PARTITION BY RANGE (order_date);
+
+CREATE TABLE orders_2025
+PARTITION OF orders
+FOR VALUES FROM ('2025-01-01') TO ('2026-01-01');
+
+CREATE TABLE orders_2026
+PARTITION OF orders
+FOR VALUES FROM ('2026-01-01') TO ('2027-01-01');
