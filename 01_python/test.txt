@@ -1,0 +1,38 @@
+1. prime number till given number
+2. prymid pattern
+3. square pattern
+4. given array 
+	[1, 2, 3, 4, 5, 6, 7]
+	write a function that give the index number 
+	of the given element if not found return 
+	-1
+5. write a program that register 3 user with email and password then write login function which ask email and password if correct print the info of user
+
+6. write a program to filter items based upon price 
+	products = [
+    {
+        "product_name": "Laptop",
+        "price": 55000,
+        "desc": "15.6-inch display, Intel i5 processor, 8GB RAM"
+    },
+    {
+        "product_name": "Wireless Mouse",
+        "price": 799,
+        "desc": "Ergonomic design with Bluetooth connectivity"
+    },
+    {
+        "product_name": "Keyboard",
+        "price": 1299,
+        "desc": "Mechanical keyboard with RGB backlight"
+    },
+    {
+        "product_name": "Monitor",
+        "price": 12999,
+        "desc": "24-inch Full HD IPS display"
+    }
+]
+
+what is type conversion in python 
+what is variable what are rules to declare it
+given percentage write gradeing system
+
